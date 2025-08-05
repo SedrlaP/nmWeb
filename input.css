@@ -1,1 +1,20 @@
 @import "tailwindcss";
+@tailwind utilities;
+
+@layer components {
+  .hover-underline-left {
+    @apply relative inline-block no-underline text-black;
+  }
+
+  .hover-underline-left::after {
+    content: '';
+    @apply absolute left-0 bottom-0 h-0.5 w-full bg-current;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+  }
+
+  .hover-underline-left:hover::after {
+    transform: scaleX(1);
+  }
+}
