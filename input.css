@@ -3,7 +3,7 @@
 
 @layer components {
   .hover-underline-left {
-    @apply relative inline-block no-underline text-black;
+    @apply relative inline-block no-underline;
   }
 
   .hover-underline-left::after {
@@ -17,4 +17,31 @@
   .hover-underline-left:hover::after {
     transform: scaleX(1);
   }
+}
+
+@layer utilities {
+  .bg-hero {
+    background-image: url('/media/Wireframe.png');
+  }
+}
+
+.cormorant-garamond-400 {
+  font-family: "Cormorant Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.cormorant-garamond-500 {
+  font-family: "Cormorant Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.cormorant-garamond-600 {
+  font-family: "Cormorant Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
 }
