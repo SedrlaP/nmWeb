@@ -1,6 +1,14 @@
 @import "tailwindcss";
 @tailwind utilities;
 
+@theme {
+  --color-header: #D9A4B3;
+  --color-text: #4E4542;
+  --color-primary-background: #F9E9EC;
+  --color-secondary-background: #F6F1ED;
+  --color-cta: #EEC9D2;
+}
+
 @layer components {
   .hover-underline-left {
     @apply relative inline-block no-underline;
@@ -16,12 +24,6 @@
 
   .hover-underline-left:hover::after {
     transform: scaleX(1);
-  }
-}
-
-@layer utilities {
-  .bg-hero {
-    background-image: url('/media/Wireframe.png');
   }
 }
 
@@ -45,3 +47,11 @@
   font-weight: 600;
   font-style: normal;
 }
+
+/* Ruzova od vrchu dolu
+body {
+  height:100vh;
+  background: linear-gradient(180deg,#F9E9EC, #fff 50%);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+} */
