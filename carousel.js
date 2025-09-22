@@ -8,8 +8,9 @@
 
     function getItemsPerView() {
       const width = window.innerWidth;
-      if (width >= 1024) return 4; // lg
-      if (width >= 640) return 3;  // sm
+      if (width >= 1280) return 4; // xl
+      if (width >= 1024) return 3;  // lg
+      if (width >= 768) return 2;   // md
       return 1;                    // base
     }
 
