@@ -12,7 +12,7 @@
 
 @layer components {
   .cenik-cena {
-    @apply sm:ml-6 sm:min-w-24 min-w-16 text-center text-lg
+    @apply sm:ml-6 sm:min-w-24 min-w-16 text-center text-lg font-bold sm:font-normal
   }
 }
 
