@@ -1,6 +1,7 @@
 @import "tailwindcss";
 @tailwind utilities;
 
+
 @theme {
   --color-header: #D9A4B3;
   --color-text: #4E4542;
@@ -13,6 +14,39 @@
   .cenik-cena {
     @apply sm:ml-6 sm:min-w-24 min-w-16 text-center text-lg
   }
+}
+
+.button:before,
+.button:after {
+    width: 3em;
+    height: 2.5em;
+    position: absolute;
+    content: "";
+    display: inline-block;
+    background: var(--color-cta);
+    border-radius: 50%;
+    transition: transform 1s ease;
+    transform: scale(0);
+    z-index: -1;
+}
+
+.button:before {
+    top: -25%;
+    left: 10%;
+}
+
+.button:after {
+    bottom: -25%;
+    right: 10%;
+}
+
+.button:hover:before,
+.button:hover:after {
+    transform: none;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .cormorant-garamond-400 {
