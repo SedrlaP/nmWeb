@@ -542,6 +542,9 @@
     font-size: var(--text-xl);
     line-height: var(--tw-leading, var(--text-xl--line-height));
   }
+  .text-cta {
+    color: var(--color-cta);
+  }
   .text-gray-700 {
     color: var(--color-gray-700);
   }
@@ -556,6 +559,15 @@
   }
   .underline {
     text-decoration-line: underline;
+  }
+  .underline-offset-1 {
+    text-underline-offset: 1px;
+  }
+  .underline-offset-2 {
+    text-underline-offset: 2px;
+  }
+  .underline-offset-5 {
+    text-underline-offset: 5px;
   }
   .shadow {
     --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 1px 2px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
