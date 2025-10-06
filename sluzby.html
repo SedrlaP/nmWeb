@@ -37,7 +37,12 @@
                     <div class="hidden md:block">
                         <div class="flex items-center space-x-1 md:space-x-4 text-xl">
                             <a class="transition-colors duration-700 ease-in-out hover:bg-cta px-3 py-2 rounded-lg" href="index.html">Úvod</a>
-                            <a class="transition-colors duration-700 ease-in-out bg-cta px-3 py-2 rounded-lg" href="sluzby.html">Služby</a>
+                            <div class="relative flex group">
+                                <a class="transition-colors duration-700 ease-in-out bg-cta px-3 py-2 rounded-lg" href="sluzby.html">Služby</a>
+                                <div class="absolute left-0 top-full hidden group-hover:block bg-white shadow-lg rounded-lg ">
+                                    <a href="sluzby.html#pece" class="block px-4 py-2 hover:bg-cta rounded-lg">Péče&nbsp;po</a>
+                                </div>
+                            </div>
                             <div class="relative flex group">
                                 <a class="transition-colors duration-700 ease-in-out hover:bg-cta px-3 py-2 rounded-lg cursor-pointer" href="cenik.html">
                                 Ceník
@@ -133,49 +138,56 @@
             </div>
             <img src="./media/ruceNehty.jpeg" alt="Barvení obočí a řas" class="mt-2 sm:mt-0 rounded-lg shadow-md max-h-64">
         </div>
-        <h3 class="text-2xl sm:text-3xl abhaya-libre-semibold mt-6">Co dělat, aby výsledek vydržel co nejdéle</h3>
-        <div class="flex lg:flex-row flex-col justify-evenly w-full mt-2 gap-4">
-            <div>
-                <h4 class="text-xl sm:text-2xl abhaya-libre-semibold text-center my-2">Nehty</h4>
-                <p class="text-xl">Co nedělat po nehtové modeláži a proč:</p>
-                <ul class="list-disc list-inside mt-2 space-y-4">
-                    <li class="text-lg">Neotvírat věci nehty <br/>
-                        <span class="pl-5">– mohly by se odštípnout.</span>
-                    </li>
-                    <li class="text-lg">Dlouho nenamáčet ruce v horké vodě <br/>
-                        <span class="pl-5">– oslabila by se přilnavost materiálu.</span>
-                    </li>
-                    <li class="text-lg">Nevystavovat nehty chemii bez rukavic <br/>
-                        <span class="pl-5">– čisticí prostředky narušují povrch.</span>
-                    </li>
-                    <li class="text-lg">Neloupat ani nekousat nehet <br/>
-                        <span class="pl-5">– zkracuje to životnost a kazí vzhled.</span>
-                    </li>
-                    <li class="text-lg">Nepoužívat nehty jako nástroj <br/>
-                        <span class="pl-5">– mohou prasknout.</span>
-                    </li>
-                </ul>
-                <p class="text-xl mt-4">Co naopak dělat, aby vám nehty vydržely krásné:</p>
-                <ul class="list-disc list-inside mt-2 space-y-4">
-                    <li class="text-lg">Pravidelně používat olejíček na kůžičku <br/>
-                        <span class="pl-5">- hydratuje a chrání okolí nehtu.</span>
-                    </li>
-                    <li class="text-lg">Krémovat ruce <br/>
-                        <span class="pl-5">– pro hebkou pokožku a zdravý vzhled.</span>
-                    </li>
-                    <li class="text-lg">Nosit rukavice při úklidu a mytí nádobí <br/>
-                        <span class="pl-5">– chrání před chemií i nadměrnou vlhkostí.</span>
-                    </li>
-                    <li class="text-lg">Docházet na pravidelné doplnění <br/>
-                        <span class="pl-5">– zajistí trvanlivost a upravený vzhled nehtů.</span>
-                    </li>
-                    <li class="text-lg">Po plavání chvíli počkat <br/>
-                        <span class="pl-5">– nechte nehty 1–2 hodiny volně vyschnout, aby zůstaly pevné a lesklé.</span>
-                    </li>
-                </ul>   
+        <h3 id="pece" class="scroll-mt-26 mt-6 text-2xl sm:text-3xl abhaya-libre-semibold">Co dělat, aby výsledek vydržel co nejdéle</h3>
+        <div class="flex flex-col justify-evenly mt-2 gap-4">
+            <div class="">
+                <h4 class="text-xl sm:text-2xl text-center abhaya-libre-semibold my-2">Nehty</h4>
+                <div class="flex flex-col md:flex-row justify-center gap-2">
+                    <div class="">
+                        <p class="text-xl">Co naopak dělat, aby vám nehty vydržely krásné:</p>
+                        <ul class="list-disc list-inside mt-2 space-y-4">
+                            <li class="text-lg">Pravidelně používat olejíček na kůžičku <br/>
+                                <span class="pl-5">- hydratuje a chrání okolí nehtu.</span>
+                            </li>
+                            <li class="text-lg">Krémovat ruce <br/>
+                                <span class="pl-5">– pro hebkou pokožku a zdravý vzhled.</span>
+                            </li>
+                            <li class="text-lg">Nosit rukavice při úklidu a mytí nádobí <br/>
+                                <span class="pl-5">– chrání před chemií i nadměrnou vlhkostí.</span>
+                            </li>
+                            <li class="text-lg">Docházet na pravidelné doplnění <br/>
+                                <span class="pl-5">– zajistí trvanlivost a upravený vzhled nehtů.</span>
+                            </li>
+                            <li class="text-lg">Po plavání chvíli počkat <br/>
+                                <span class="pl-5">– nechte nehty 1–2 hodiny volně vyschnout, aby zůstaly pevné a lesklé.</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="">
+                        <p class="text-xl">Co nedělat po nehtové modeláži a proč:</p>
+                        <ul class="list-disc list-inside mt-2 space-y-4">
+                            <li class="text-lg">Neotvírat věci nehty <br/>
+                                <span class="pl-5">– mohly by se odštípnout.</span>
+                            </li>
+                            <li class="text-lg">Dlouho nenamáčet ruce v horké vodě <br/>
+                                <span class="pl-5">– oslabila by se přilnavost materiálu.</span>
+                            </li>
+                            <li class="text-lg">Nevystavovat nehty chemii bez rukavic <br/>
+                                <span class="pl-5">– čisticí prostředky narušují povrch.</span>
+                            </li>
+                            <li class="text-lg">Neloupat ani nekousat nehet <br/>
+                                <span class="pl-5">– zkracuje to životnost a kazí vzhled.</span>
+                            </li>
+                            <li class="text-lg">Nepoužívat nehty jako nástroj <br/>
+                                <span class="pl-5">– mohou prasknout.</span>
+                            </li>
+                        </ul>
+                    </div>   
+
+                </div>
             </div>
             <div >
-                <h4 class="text-xl sm:text-2xl abhaya-libre-semibold text-center my-2">Kosmetika</h4>
+                <h4 class="text-xl sm:text-2xl text-center abhaya-libre-semibold my-2">Kosmetika</h4>
                 <p class="text-xl">Vyhýbej se prosím těmto věcem po dobu 24–48 hodin:</p>
                 <ul class="list-disc list-inside mt-2 space-y-4">
                     <li class="text-lg">Nesahej si často na obličej <br/>
