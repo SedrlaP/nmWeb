@@ -259,6 +259,9 @@
   .z-60 {
     z-index: 60;
   }
+  .mx-14 {
+    margin-inline: calc(var(--spacing) * 14);
+  }
   .mx-auto {
     margin-inline: auto;
   }
@@ -346,6 +349,9 @@
   }
   .max-w-7xl {
     max-width: var(--container-7xl);
+  }
+  .max-w-\[40\%\] {
+    max-width: 40%;
   }
   .max-w-md {
     max-width: var(--container-md);
@@ -931,6 +937,11 @@
       display: block;
     }
   }
+  .md\:flex {
+    @media (width >= 48rem) {
+      display: flex;
+    }
+  }
   .md\:hidden {
     @media (width >= 48rem) {
       display: none;
@@ -939,6 +950,11 @@
   .md\:w-1\/2 {
     @media (width >= 48rem) {
       width: calc(1/2 * 100%);
+    }
+  }
+  .md\:flex-1 {
+    @media (width >= 48rem) {
+      flex: 1;
     }
   }
   .md\:flex-row {
