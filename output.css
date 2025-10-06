@@ -329,6 +329,9 @@
   .max-h-64 {
     max-height: calc(var(--spacing) * 64);
   }
+  .w-2\/5 {
+    width: calc(2/5 * 100%);
+  }
   .w-56 {
     width: calc(var(--spacing) * 56);
   }
@@ -404,6 +407,9 @@
   .justify-evenly {
     justify-content: space-evenly;
   }
+  .justify-start {
+    justify-content: flex-start;
+  }
   .gap-2 {
     gap: calc(var(--spacing) * 2);
   }
@@ -415,6 +421,9 @@
   }
   .gap-10 {
     gap: calc(var(--spacing) * 10);
+  }
+  .gap-12 {
+    gap: calc(var(--spacing) * 12);
   }
   .gap-20 {
     gap: calc(var(--spacing) * 20);
@@ -523,6 +532,12 @@
   }
   .px-5 {
     padding-inline: calc(var(--spacing) * 5);
+  }
+  .px-6 {
+    padding-inline: calc(var(--spacing) * 6);
+  }
+  .px-10 {
+    padding-inline: calc(var(--spacing) * 10);
   }
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
@@ -952,6 +967,11 @@
       width: calc(1/2 * 100%);
     }
   }
+  .md\:w-2\/5 {
+    @media (width >= 48rem) {
+      width: calc(2/5 * 100%);
+    }
+  }
   .md\:flex-1 {
     @media (width >= 48rem) {
       flex: 1;
@@ -965,6 +985,16 @@
   .md\:justify-between {
     @media (width >= 48rem) {
       justify-content: space-between;
+    }
+  }
+  .md\:justify-center {
+    @media (width >= 48rem) {
+      justify-content: center;
+    }
+  }
+  .md\:gap-0 {
+    @media (width >= 48rem) {
+      gap: calc(var(--spacing) * 0);
     }
   }
   .md\:space-x-4 {
