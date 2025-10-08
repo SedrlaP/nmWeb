@@ -18,7 +18,7 @@
 
 .button:before,
 .button:after {
-    width: 3em;
+    width: 4em;
     height: 2.5em;
     position: absolute;
     content: "";
@@ -32,12 +32,12 @@
 
 .button:before {
     top: -25%;
-    left: 10%;
+    left: 5%;
 }
 
 .button:after {
     bottom: -25%;
-    right: 10%;
+    right: 15%;
 }
 
 .button:hover:before,
