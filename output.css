@@ -217,6 +217,9 @@
   .-inset-0\.5 {
     inset: calc(var(--spacing) * -0.5);
   }
+  .inset-0 {
+    inset: calc(var(--spacing) * 0);
+  }
   .inset-x-0 {
     inset-inline: calc(var(--spacing) * 0);
   }
@@ -283,6 +286,9 @@
   .mt-6 {
     margin-top: calc(var(--spacing) * 6);
   }
+  .mt-10 {
+    margin-top: calc(var(--spacing) * 10);
+  }
   .mt-16 {
     margin-top: calc(var(--spacing) * 16);
   }
@@ -301,6 +307,9 @@
   .hidden {
     display: none;
   }
+  .inline-block {
+    display: inline-block;
+  }
   .inline-flex {
     display: inline-flex;
   }
@@ -314,14 +323,41 @@
   .h-64 {
     height: calc(var(--spacing) * 64);
   }
+  .h-96 {
+    height: calc(var(--spacing) * 96);
+  }
+  .h-\[300px\] {
+    height: 300px;
+  }
+  .h-full {
+    height: 100%;
+  }
   .max-h-64 {
     max-height: calc(var(--spacing) * 64);
+  }
+  .w-20 {
+    width: calc(var(--spacing) * 20);
   }
   .w-56 {
     width: calc(var(--spacing) * 56);
   }
+  .w-96 {
+    width: calc(var(--spacing) * 96);
+  }
+  .w-128 {
+    width: calc(var(--spacing) * 128);
+  }
+  .w-200 {
+    width: calc(var(--spacing) * 200);
+  }
+  .w-256 {
+    width: calc(var(--spacing) * 256);
+  }
   .w-\[1px\] {
     width: 1px;
+  }
+  .w-\[200px\] {
+    width: 200px;
   }
   .w-full {
     width: 100%;
@@ -343,6 +379,12 @@
   }
   .flex-shrink-0 {
     flex-shrink: 0;
+  }
+  .origin-center {
+    transform-origin: center;
+  }
+  .rotate-90 {
+    rotate: 90deg;
   }
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
@@ -772,6 +814,11 @@
       height: calc(var(--spacing) * 72);
     }
   }
+  .sm\:h-96 {
+    @media (width >= 40rem) {
+      height: calc(var(--spacing) * 96);
+    }
+  }
   .sm\:w-56 {
     @media (width >= 40rem) {
       width: calc(var(--spacing) * 56);
@@ -798,6 +845,11 @@
     @media (width >= 40rem) {
       --tw-translate-y: calc(calc(1/2 * 100%) * -1);
       translate: var(--tw-translate-x) var(--tw-translate-y);
+    }
+  }
+  .sm\:rotate-0 {
+    @media (width >= 40rem) {
+      rotate: 0deg;
     }
   }
   .sm\:flex-row {
