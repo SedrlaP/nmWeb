@@ -944,6 +944,11 @@
       margin-top: calc(var(--spacing) * 4);
     }
   }
+  .md\:mt-16 {
+    @media (width >= 48rem) {
+      margin-top: calc(var(--spacing) * 16);
+    }
+  }
   .md\:mt-20 {
     @media (width >= 48rem) {
       margin-top: calc(var(--spacing) * 20);
@@ -1034,6 +1039,11 @@
   .lg\:absolute {
     @media (width >= 64rem) {
       position: absolute;
+    }
+  }
+  .lg\:mt-20 {
+    @media (width >= 64rem) {
+      margin-top: calc(var(--spacing) * 20);
     }
   }
   .lg\:mt-40 {
