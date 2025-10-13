@@ -101,15 +101,14 @@
         </el-disclosure>
         </nav>
     </header>
-    
-    <main class="flex flex-col space-y-4 sm:space-y-8 my-5 sm:my-10 mx-auto max-w-7xl px-4 sm:px-10 lg:px-20 abhaya-libre-regular">
-        <div class="flex justify-between">
-            <div class="flex flex-col sm:max-w-3/5">
-                <h1 class="text-3xl lg:text-4xl mb-4">Vítám vás v místě, kde péče o pleť a nehty splývá s odpočinkem.</h1>
-                <p class="text-lg lg:text-xl mb-6">Dopřejte si chvíli pro sebe v klidném prostředí, kde se zaměřuji na přirozenou krásu, jemnost a individuální přístup. Nabízím kosmetická ošetření a manikúru, které podpoří vaši pohodu i sebevědomí. Každý detail je pro mě důležitý – od čistého provedení po příjemnou atmosféru.</p>
-                <div class="flex gap-8">
-                    <div class="py-6 [filter:url('#goo')]">
-                        <a class="relative button bg-cta self-center sm:self-start px-5 py-3 rounded-3xl cursor-pointer text-xl" href="cenik.html">Ceník služeb</a>
+    <!-- my-5 sm:my-10 mx-auto max-w-7xl px-4 sm:px-10 lg:px-20 -->
+    <main class="flex flex-col space-y-4 sm:space-y-8 mb-5 sm:mb-10 abhaya-libre-regular">
+        <div class="relative z-0 flex items-center w-full h-96 bg-[url('media/salon-panorama.jpeg')] bg-no-repeat bg-cover sm:bg-center"> 
+            <div class="relative text-white z-2 flex flex-col my-5 sm:my-10 mx-auto max-w-7xl px-4 sm:px-10 lg:px-20">
+                <h1 class="text-3xl lg:text-4xl mb-4">Vítám vás v místě, kde péče o pleť a nehty splývá s odpočinkem</h1>
+                <div class="self-center text-black flex sm:flex-row flex-col gap-8">
+                    <div class="sm:py-6 [filter:url('#goo')]">
+                        <a class="relative button block w-36 bg-cta self-center sm:self-start px-5 py-3 rounded-3xl cursor-pointer text-xl" href="cenik.html">Ceník&nbsp;služeb</a>
                         <svg style="visibility: hidden; position: absolute;" width="0" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1">
                             <defs>
                                 <filter id="goo"> 
@@ -119,58 +118,62 @@
                             </defs>
                         </svg>
                     </div>
-                    <div class="py-6">
-                        <a class="relative bg-[#FAEFED] outline-4 -outline-offset-4 outline-cta self-center sm:self-start px-5 py-3 rounded-3xl cursor-pointer text-xl" href="kontakt.html">Objednat</a>
+                    <div class="sm:py-6">
+                        <a class="block relative w-36 bg-[#FAEFED] outline-4 -outline-offset-4 outline-cta self-center sm:self-start px-5 py-3 rounded-3xl cursor-pointer text-xl text-center" href="kontakt.html">Objednat</a>
                     </div>
                 </div>
             </div>
-            <div class="">
-                <img src="media/hero.jpeg" alt="Ruce s upravenými nehty" class="hidden sm:block -mt-6 sm:w-56 sm:h-72 lg:w-64 lg:h-72 ">
-            </div>
+            <div class="absolute inset-0 z-1 bg-black/20"></div>
         </div>
-        <div class="relative w-full max-w-6xl self-center sm:px-8">
-            <!-- Carousel Wrapper -->
-            <div class="overflow-hidden">
-                <!-- Carousel Track -->
-                <div id="carousel-track" class="flex transition-transform duration-500 ease-in-out ">
-                    <!-- Image Items -->
-                    <div class="carousel-item w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-2 flex justify-center flex-shrink-0">
-                        <img src="media/nehty1.webp" alt="Fotka nehtů" class="w-56 h-64 rounded-2xl"/>
-                    </div>
-                    <div class="carousel-item w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-2 flex justify-center flex-shrink-0">
-                        <img src="media/nehty2.webp" alt="Fotka nehtů" class="w-56 h-64 rounded-2xl"/>
-                    </div>
-                    <div class="carousel-item w-full lg:w-1/3 xl:w-1/4 p-2 flex justify-center flex-shrink-0">
-                        <img src="media/nehty3.webp" alt="Fotka nehtů" class="w-56 h-64 rounded-2xl"/>
-                    </div>
-                    <div class="carousel-item w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-2 flex justify-center flex-shrink-0">
-                        <img src="media/nehty4.webp" alt="Fotka nehtů" class="w-56 h-64 rounded-2xl"/>
-                    </div>
-                    <div class="carousel-item w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-2 flex justify-center flex-shrink-0">
-                        <img src="media/nehty5.webp" alt="Fotka nehtů" loading="lazy" class="w-56 h-64 rounded-2xl"/>
-                    </div>
-                    <div class="carousel-item w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-2 flex justify-center flex-shrink-0">
-                        <img src="media/nehty6.webp" alt="Fotka nehtů" loading="lazy" class="w-56 h-64 rounded-2xl"/>
-                    </div>
-                    <div class="carousel-item w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-2 flex justify-center flex-shrink-0">
-                        <img src="media/nehty7.webp" alt="Fotka nehtů" loading="lazy" class="w-56 h-64 rounded-2xl"/>
-                    </div>
-                    <div class="carousel-item w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-2 flex justify-center flex-shrink-0">
-                        <img src="media/nehty8.webp" alt="Fotka nehtů" loading="lazy" class="w-56 h-64 rounded-2xl"/>
+        <div class="my-6 text-center mx-auto max-w-6xl px-4 sm:px-10 lg:px-20">
+            <p class="text-xl lg:text-2xl">Dopřejte si chvíli pro sebe v klidném prostředí, kde se zaměřuji na přirozenou krásu, jemnost a individuální přístup. Nabízím kosmetická ošetření a manikúru, které podpoří vaši pohodu i sebevědomí. Každý detail je pro mě důležitý – od čistého provedení po příjemnou atmosféru.</p>
+        </div>
+        
+        <div class="my-10 text-center mx-auto max-w-7xl px-4 sm:px-10 lg:px-20">
+            <h2 class="text-3xl lg:text-4xl mb-4">Ukázka mojí práce</h2>
+            <div class="relative w-full max-w-6xl self-center sm:px-8">
+                <!-- Carousel Wrapper -->
+                <div class="overflow-hidden">
+                    <!-- Carousel Track -->
+                    <div id="carousel-track" class="flex transition-transform duration-500 ease-in-out ">
+                        <!-- Image Items -->
+                        <div class="carousel-item w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-2 flex justify-center flex-shrink-0">
+                            <img src="media/nehty1.webp" alt="Fotka nehtů" class="w-56 h-64 rounded-2xl"/>
+                        </div>
+                        <div class="carousel-item w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-2 flex justify-center flex-shrink-0">
+                            <img src="media/nehty4.webp" alt="Fotka nehtů" class="w-56 h-64 rounded-2xl"/>
+                        </div>
+                        <div class="carousel-item w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-2 flex justify-center flex-shrink-0">
+                            <img src="media/nehty2.webp" alt="Fotka nehtů" class="w-56 h-64 rounded-2xl"/>
+                        </div>
+                        <div class="carousel-item w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-2 flex justify-center flex-shrink-0">
+                            <img src="media/nehty5.webp" alt="Fotka nehtů" loading="lazy" class="w-56 h-64 rounded-2xl"/>
+                        </div>
+                        <div class="carousel-item w-full lg:w-1/3 xl:w-1/4 p-2 flex justify-center flex-shrink-0">
+                            <img src="media/nehty3.webp" alt="Fotka nehtů" class="w-56 h-64 rounded-2xl"/>
+                        </div>
+                        <div class="carousel-item w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-2 flex justify-center flex-shrink-0">
+                            <img src="media/nehty6.webp" alt="Fotka nehtů" loading="lazy" class="w-56 h-64 rounded-2xl"/>
+                        </div>
+                        <div class="carousel-item w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-2 flex justify-center flex-shrink-0">
+                            <img src="media/nehty7.webp" alt="Fotka nehtů" loading="lazy" class="w-56 h-64 rounded-2xl"/>
+                        </div>
+                        <div class="carousel-item w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-2 flex justify-center flex-shrink-0">
+                            <img src="media/nehty8.webp" alt="Fotka nehtů" loading="lazy" class="w-56 h-64 rounded-2xl"/>
+                        </div>
                     </div>
                 </div>
+
+                <!-- Navigation Buttons (outside) -->
+                <button id="prev-btn" class="absolute -left-2 sm:left-0 [top:calc(50%-1.5rem)] sm:top-1/2 sm:-translate-y-1/2 sm:-translate-x-full bg-white/90 hover:bg-white text-gray-700 p-3 rounded-full shadow">
+                &#10094;
+                </button>
+
+                <button id="next-btn" class="absolute -right-2 sm:right-0 [top:calc(50%-1.5rem)] sm:top-1/2 sm:-translate-y-1/2 sm:translate-x-full bg-white/90 hover:bg-white text-gray-700 p-3 rounded-full shadow">
+                &#10095;
+                </button>
             </div>
-
-            <!-- Navigation Buttons (outside) -->
-            <button id="prev-btn" class="absolute -left-2 sm:left-0 [top:calc(50%-1.5rem)] sm:top-1/2 sm:-translate-y-1/2 sm:-translate-x-full bg-white/90 hover:bg-white text-gray-700 p-3 rounded-full shadow">
-            &#10094;
-            </button>
-
-            <button id="next-btn" class="absolute -right-2 sm:right-0 [top:calc(50%-1.5rem)] sm:top-1/2 sm:-translate-y-1/2 sm:translate-x-full bg-white/90 hover:bg-white text-gray-700 p-3 rounded-full shadow">
-            &#10095;
-            </button>
         </div>
-
         <div class="flex flex-col max-sm:w-dvw sm:flex-row sm:my-10 max-w-4xl lg:w-4xl py-4 sm:py-8 px-4 sm:px-10 self-center relative bg-cta sm:rounded-lg shadow">
             <div class="mb-4 sm:mb-0 sm:pr-12">
                 <h2 class="text-3xl lg:text-4xl mb-4">O mně</h2>
@@ -188,7 +191,7 @@
             <img src="media/ja.webp"
                 alt="Fotka Jitu"
                 class="self-center lg:absolute bottom-0 right-0 w-56 h-64 object-cover transform lg:translate-x-1/5 lg:translate-y-1/5 rounded-lg"/>
-            </div>
+        </div>
     </main>
     <footer class="mt-16 md:mt-20 lg:mt-40">
         <div class="bg-cta pt-2 sm:pt-6 pb-2 flex flex-col ">
