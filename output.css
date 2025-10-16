@@ -567,6 +567,9 @@
   .bg-\[url\(\'media\/salon-panorama\.jpeg\'\)\] {
     background-image: url('media/salon-panorama.jpeg');
   }
+  .bg-\[url\(\'media\/salon-panorama\.webp\'\)\] {
+    background-image: url('media/salon-panorama.webp');
+  }
   .bg-cover {
     background-size: cover;
   }
