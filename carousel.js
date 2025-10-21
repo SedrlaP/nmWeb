@@ -1,21 +1,22 @@
 // carousel.js
     const images = [
-            'media/nehty1.webp',
-            'media/nehty4.webp',
-            'media/nehty2.webp',
-            'media/nehty5.webp',
-            'media/nehty3.webp',
-            'media/nehty6.webp',
-            'media/nehty7.webp',
-            'media/nehty9.webp',
-            'media/nehty10.webp',
-            'media/nehty11.webp',
-            'media/nehty12.webp',
-            'media/nehty13.webp',
-            'media/nehty14.webp',
-            'media/nehty15.webp',
-            'media/nehty16.webp',
-        ];
+      'media/nehty4.webp',
+      'media/nehty11.webp',
+      'media/nehty13.webp',
+      'media/nehty12.webp',
+      'media/nehty14.webp',
+      'media/nehty15.webp',
+      'media/nehty16.webp',
+      'media/nehty10.webp',
+      'media/nehty1.webp',
+      'media/nehty2.webp',
+      'media/nehty5.webp',
+      'media/nehty3.webp',
+      'media/nehty6.webp',
+      'media/nehty7.webp',
+      'media/nehty9.webp',
+      'media/nehty17.webp',
+    ];
 
         const carouselTrack = document.getElementById('carousel-track');
 
