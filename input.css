@@ -8,6 +8,7 @@
   --color-primary-background: #F9E9EC;
   --color-secondary-background: #F6F1ED;
   --color-cta: #EEC9D2;
+  --breakpoint-md-menu: 853px;
 }
 
 @layer components {
