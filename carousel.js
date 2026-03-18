@@ -3,12 +3,12 @@
 
       'media/nehty13.webp',
       'media/nehty14.webp',
-      'media/nehty16.webp',
-      'media/nehty6.webp',
+      // 'media/nehty16.webp',
+      // 'media/nehty6.webp',
 
       'media/nehty1.webp',
       'media/nehty2.webp',
-      'media/nehty3.webp',
+      // 'media/nehty3.webp',
       'media/nehty4.webp',
 
       'media/nehty8.webp',
@@ -19,12 +19,12 @@
       'media/nehty12.webp',
       'media/nehty23.webp',      
       'media/nehty17.webp',
-      'media/nehty18.webp',
+      // 'media/nehty18.webp',
 
-      'media/nehty11.webp',
-      'media/nehty19.webp',
+      // 'media/nehty11.webp',
+      // 'media/nehty19.webp',
       'media/nehty20.webp',
-      'media/nehty5.webp',
+      // 'media/nehty5.webp',
 
       'media/nehty7.webp',
       'media/nehty22.webp',
