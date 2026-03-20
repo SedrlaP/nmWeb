@@ -187,9 +187,15 @@
                 </p>
             </div>
             <!-- Overlapping Image -->
-            <img src="media/o-mne.jpg"
-                alt="Fotka Jitu"
-                class="self-center lg:absolute bottom-0 right-0 w-56 h-64 object-cover transform lg:translate-x-1/5 lg:translate-y-1/5 rounded-lg"/>
+            <picture class="self-center lg:absolute bottom-0 right-0 w-56 h-64 overflow-hidden rounded-lg transform lg:translate-x-1/5 lg:translate-y-1/5">
+                <source type="image/webp" srcset="media/o-mne-450.webp" />
+                <source type="image/jpeg" srcset="media/o-mne-450.jpg" />
+                <img src="media/o-mne-450.jpg"
+                    alt="Fotka Jitu"
+                    width="450"
+                    height="672"
+                    class="w-full h-full object-cover" />
+            </picture>
         </div>
     </main>
     <footer class="mt-16 md:mt-20 lg:mt-40">
