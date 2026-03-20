@@ -283,6 +283,9 @@
   .my-2 {
     margin-block: calc(var(--spacing) * 2);
   }
+  .my-4 {
+    margin-block: calc(var(--spacing) * 4);
+  }
   .my-5 {
     margin-block: calc(var(--spacing) * 5);
   }
@@ -347,8 +350,17 @@
   .max-h-64 {
     max-height: calc(var(--spacing) * 64);
   }
+  .max-h-72 {
+    max-height: calc(var(--spacing) * 72);
+  }
+  .max-h-92 {
+    max-height: calc(var(--spacing) * 92);
+  }
   .min-h-screen {
     min-height: 100vh;
+  }
+  .w-24 {
+    width: calc(var(--spacing) * 24);
   }
   .w-36 {
     width: calc(var(--spacing) * 36);
@@ -358,6 +370,9 @@
   }
   .w-\[1px\] {
     width: 1px;
+  }
+  .w-auto {
+    width: auto;
   }
   .w-full {
     width: 100%;
@@ -377,6 +392,9 @@
   .max-w-56 {
     max-width: calc(var(--spacing) * 56);
   }
+  .flex-0 {
+    flex: 0;
+  }
   .flex-1 {
     flex: 1;
   }
@@ -385,6 +403,12 @@
   }
   .flex-shrink-0 {
     flex-shrink: 0;
+  }
+  .flex-grow {
+    flex-grow: 1;
+  }
+  .flex-grow-0 {
+    flex-grow: 0;
   }
   .border-collapse {
     border-collapse: collapse;
@@ -1009,6 +1033,11 @@
       margin-top: calc(var(--spacing) * 4);
     }
   }
+  .md\:mt-8 {
+    @media (width >= 48rem) {
+      margin-top: calc(var(--spacing) * 8);
+    }
+  }
   .md\:mt-16 {
     @media (width >= 48rem) {
       margin-top: calc(var(--spacing) * 16);
@@ -1029,6 +1058,11 @@
       display: none;
     }
   }
+  .md\:max-h-64 {
+    @media (width >= 48rem) {
+      max-height: calc(var(--spacing) * 64);
+    }
+  }
   .md\:w-1\/2 {
     @media (width >= 48rem) {
       width: calc(1/2 * 100%);
@@ -1047,6 +1081,11 @@
   .md\:flex-row {
     @media (width >= 48rem) {
       flex-direction: row;
+    }
+  }
+  .md\:items-center {
+    @media (width >= 48rem) {
+      align-items: center;
     }
   }
   .md\:justify-between {
@@ -1217,6 +1256,13 @@
     @media (width >= 48rem) {
       & iframe {
         width: calc(var(--spacing) * 96);
+      }
+    }
+  }
+  .md\:\[\&_iframe\]\:w-128 {
+    @media (width >= 48rem) {
+      & iframe {
+        width: calc(var(--spacing) * 128);
       }
     }
   }
