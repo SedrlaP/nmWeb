@@ -20,6 +20,9 @@
     <!-- Main Tailwind CSS -->
     <link href="../output.css" rel="stylesheet">
 
+    <!-- Preload key images -->
+    <link rel="preload" as="image" href="/media/poukaz-800.webp" type="image/webp" fetchpriority="high">
+
     <title>Krásná s Jitu - poukazy</title>
     <meta name="title" content="Krásná s Jitu - poukazy">
     <meta name="description" content="Darujte krásu a péči s dárkovými poukazy od Krásná s Jitu. Ideální dárek pro vaše blízké.">
@@ -130,10 +133,18 @@
             <p class="mt-4 text-lg md:text-xl text-center">Nabízím dárkový poukaz, který lze uplatnit na jakoukoli službu z mé nabídky manikúry a kosmetiky.</p>
             <p class="mt-4 text-lg md:text-xl text-center">Poukaz můžete <b>zakoupit osobně</b> v salonu nebo také <b>online</b> – stačí mi napsat zprávu na Facebook, Instagram nebo e-mail. Po domluvě Vám zašlu QR kód k platbě a hotový poukaz obdržíte pohodlně do e-mailu.</p>
             <p class="mt-4 text-lg md:text-xl text-center">Upozorňuji, že objednané dárkové poukazy, zpracovávám manuálně a jsou k dodání <b>do 2 pracovních dnů</b> na Váš email po zaplacení.</p>
-            <img src="../media/poukaz.webp"
+            <img
+                src="/media/poukaz-800.webp"
+                srcset="
+                    /media/poukaz-800.webp 800w,
+                    /media/poukaz-900.webp 900w,
+                    /media/poukaz-1200.webp 1200w,
+                    /media/poukaz-1920.webp 1920w
+                "
+                sizes="(max-width: 640px) 100vw, 810px"
                 alt="Obrázek dárkového poukazu"
-                class="mt-6 sm:h-96 rounded-lg"
-            />
+                class="mt-6 sm:h-auto rounded-lg w-full max-w-[810px]"
+                >
                 
     </main>
     <footer class="mt-10 md:mt-16 lg:mt-20">

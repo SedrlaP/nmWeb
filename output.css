@@ -386,6 +386,9 @@
   .max-w-56 {
     max-width: calc(var(--spacing) * 56);
   }
+  .max-w-\[810px\] {
+    max-width: 810px;
+  }
   .flex-1 {
     flex: 1;
   }
@@ -910,6 +913,11 @@
   .sm\:h-96 {
     @media (width >= 40rem) {
       height: calc(var(--spacing) * 96);
+    }
+  }
+  .sm\:h-auto {
+    @media (width >= 40rem) {
+      height: auto;
     }
   }
   .sm\:max-w-2xl {
