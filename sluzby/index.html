@@ -3,22 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../output.css" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="media/favicon.ico">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="/media/favicon.ico">
     <link rel="icon" type="image/png" sizes="16x16" href="/media/favicon-16.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/media/favicon-32.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/media/favicon-180.png">
     <link rel="icon" type="image/png" sizes="192x192" href="/media/favicon-192.png">
     <link rel="icon" type="image/png" sizes="512x512" href="/media/favicon-512.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Fonts -->
+    <link rel="preload" as="font" type="font/woff2" href="/media/fonts/AbhayaLibre-Regular.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="/media/fonts/AbhayaLibre-SemiBold.woff2" crossorigin>
+    <link rel="stylesheet" href="/media/fonts/fonts.css">
+    
+    <!-- Main Tailwind CSS -->
+    <link href="../output.css" rel="stylesheet">
+    
     <title>Krásná s Jitu - služby</title>
     <meta name="title" content="Krásná s Jitu - služby">
     <meta name="description" content="Objevte širokou škálu služeb manikúry a kosmetiky v Krásná s Jitu. Profesionální péče pro vaše nehty a pleť.">
+    <link rel="canonical" href="https://krasnasjitu.cz/sluzby/">
+    
+    <!-- JS -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
     <script src="../mobile-menu.js" defer></script>
-    <link rel="canonical" href="https://krasnasjitu.cz/sluzby/">
 </head>
 <body class="bg-[#FAEFED] flex flex-col min-h-screen">
     <header class="sticky top-0 bg-white shadow-md abhaya-libre-semibold z-50">
@@ -128,7 +137,7 @@
                 <p class="mt-2 text-lg font-semibold">Produkty pro domácí péči</p> 
                 <p>Produkty, se kterými při ošetření pracuji, si u mě můžete také zakoupit. Ráda vám doporučím ty nejvhodnější podle typu vaší pleti i jejích aktuálních potřeb, aby vaše pleť zůstala krásná, zdravá a v rovnováze i mezi jednotlivými návštěvami.</p>   
             </div>
-            <img src="../media/jituska-kosmetika.jpg" alt="Jitu s produkty na kosmetiku" class="mt-2 sm:mt-0 rounded-lg shadow-md max-h-64">
+            <img src="/media/jituska-kosmetika.jpg" alt="Jitu s produkty na kosmetiku" class="mt-2 sm:mt-0 rounded-lg shadow-md max-h-64">
         </div>
         <div id="barveni-ras-oboci"class="scroll-mt-26 bg-cta rounded-lg shadow-lg my-2 py-4 px-4 flex flex-col-reverse md:flex-row justify-evenly overflow-hidden items-center">
             <img src="../media/rasyOboci.jpeg" alt="Barvení obočí a řas" class="mt-2 sm:mt-0 rounded-lg shadow-md max-h-64">
