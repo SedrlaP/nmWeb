@@ -42,6 +42,7 @@
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
     --color-text: #4E4542;
+    --color-primary-background: #FAEFED;
     --color-cta: #EEC9D2;
   }
 }
@@ -531,9 +532,6 @@
   .border-b-white {
     border-bottom-color: var(--color-white);
   }
-  .bg-\[\#FAEFED\] {
-    background-color: #FAEFED;
-  }
   .bg-\[\#fff\] {
     background-color: #fff;
   }
@@ -551,6 +549,9 @@
   }
   .bg-cta {
     background-color: var(--color-cta);
+  }
+  .bg-primary-background {
+    background-color: var(--color-primary-background);
   }
   .bg-white {
     background-color: var(--color-white);

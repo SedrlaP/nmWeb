@@ -5,7 +5,7 @@
 @theme {
   --color-header: #D9A4B3;
   --color-text: #4E4542;
-  --color-primary-background: #F9E9EC;
+  --color-primary-background: #FAEFED;
   --color-secondary-background: #F6F1ED;
   --color-cta: #EEC9D2;
   --breakpoint-md-menu: 853px;
@@ -13,37 +13,37 @@
 
 @layer components {
   .cenik-cena {
-    @apply sm:ml-6 sm:min-w-24 min-w-16 text-center 
+    @apply sm:ml-6 sm:min-w-24 min-w-16 text-center
   }
 }
 
 .button:before,
 .button:after {
-    width: 4em;
-    height: 2.5em;
-    position: absolute;
-    content: "";
-    display: inline-block;
-    background: var(--color-cta);
-    border-radius: 70%;
-    transition: transform 0.5s ease;
-    transform: scale(0);
-    z-index: -1;
+  width: 4em;
+  height: 2.5em;
+  position: absolute;
+  content: "";
+  display: inline-block;
+  background: var(--color-cta);
+  border-radius: 70%;
+  transition: transform 0.5s ease;
+  transform: scale(0);
+  z-index: -1;
 }
 
 .button:before {
-    top: -20%;
-    left: 5%;
+  top: -20%;
+  left: 5%;
 }
 
 .button:after {
-    bottom: -20%;
-    right: 5%;
+  bottom: -20%;
+  right: 5%;
 }
 
 .button:hover:before,
 .button:hover:after {
-    transform: none;
+  transform: none;
 }
 
 html {
@@ -69,4 +69,3 @@ body {
   -webkit-font-smoothing:antialiased;
   -moz-osx-font-smoothing:grayscale;
 } */
-
