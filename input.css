@@ -3,17 +3,36 @@
 
 
 @theme {
-  --color-header: #D9A4B3;
-  --color-text: #4E4542;
-  --color-primary-background: #FAEFED;
-  --color-secondary-background: #F6F1ED;
-  --color-cta: #EEC9D2;
+  --color-text: #383C35;
+  --color-header: #6F7768;
+  --color-primary-background: #F3F2ED;
+  --color-secondary-background: #E7E4DA;
+  --color-cta: #A2AE92;
+  --color-hover: #EAB2BC;
+  --color-border: #D4D0C6;
   --breakpoint-md-menu: 853px;
 }
 
 @layer components {
   .cenik-cena {
     @apply sm:ml-6 sm:min-w-24 min-w-16 text-center
+  }
+
+  .nav-link {
+    @apply rounded-2xl px-4 py-2 transition-all ease-in-out duration-700 hover:bg-header/10 hover:text-header
+  }
+
+  .nav-link-dropdown {
+    @apply flex gap-2 items-center rounded-2xl px-4 py-2 transition-all ease-in-out duration-700 hover:bg-header/10 hover:text-header
+  }
+
+
+  .nav-dropdown-item {
+    @apply block px-5 py-2 transition-colors hover:bg-header/8
+  }
+
+  .nav-active {
+    @apply transition-all duration-700 ease-in-out rounded-2xl bg-header/12 text-header px-4 py-2
   }
 }
 
