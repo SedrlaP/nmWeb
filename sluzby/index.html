@@ -32,7 +32,8 @@
 </head>
 
 <body class="bg-primary-background flex flex-col min-h-screen">
-    <header class="sticky top-0 bg-white shadow-md abhaya-libre-semibold z-50">
+    <header
+        class="sticky top-0 z-50 border-b border-border bg-primary-background/95 backdrop-blur-md abhaya-libre-semibold">
         <nav class="py-2 md:py-4 after:pointer-events-none after:absolute after:inset-x-0 after:bottom-0 after:h-px">
             <div class="mx-auto max-w-7xl px-2 md:px-10 lg:px-20 ">
                 <div class="relative flex h-16 items-center justify-between">
@@ -54,81 +55,134 @@
                         </button>
                     </div>
                     <div class="flex flex-1 items-center justify-center md-menu:justify-between">
-                        <a class="text-xl md:text-2xl uppercase flex flex-col" href="/">
-                            Krásná s Jitu
-                            <span class="lowercase text-sm md:text-base self-center">manikúra & kosmetika</span>
+                        <a class="flex flex-col leading-none">
+
+                            <span class="text-2xl sm:text-3xl uppercase tracking-[0.03em] font-medium text-text">
+                                Krásná s Jitu
+                            </span>
+
+                            <span class="text-sm tracking-[0.15em] lowercase text-header self-end">
+                                manikúra & kosmetika
+                            </span>
+
                         </a>
                         <div class="hidden md-menu:block">
                             <div class="flex items-center space-x-1 md:space-x-4 text-xl">
-                                <a class="transition-colors duration-700 ease-in-out hover:bg-cta px-3 py-2 rounded-lg"
-                                    href="/">Úvod</a>
+                                <a class="nav-link" href="/">Úvod</a>
                                 <div class="relative flex group">
-                                    <a class="transition-colors duration-700 ease-in-out bg-cta px-3 py-2 rounded-lg"
-                                        href="/sluzby/">Služby</a>
-                                    <div
-                                        class="absolute left-0 top-full hidden group-hover:block bg-white shadow-lg rounded-lg ">
-                                        <a href="/sluzby/#kosmetika"
-                                            class="block px-4 py-2 hover:bg-cta rounded-lg">Kosmetika</a>
-                                        <a href="/sluzby/#barveni-ras-oboci"
-                                            class="block px-4 py-2 hover:bg-cta rounded-lg">Barvení řas a obočí</a>
-                                        <a href="/sluzby/#manikura"
-                                            class="block px-4 py-2 hover:bg-cta rounded-lg">Manikúra</a>
-                                        <a href="/sluzby/#p-shine"
-                                            class="block px-4 py-2 hover:bg-cta rounded-lg">P-shine</a>
-                                        <a href="/sluzby/#biomikrojehlickova-kura"
-                                            class="block px-4 py-2 hover:bg-cta rounded-lg">Biomikrojehličková kůra</a>
-                                        <a href="/sluzby/#epilace"
-                                            class="block px-4 py-2 hover:bg-cta rounded-lg">Epilace</a>
-                                        <a href="/sluzby/#pece"
-                                            class="block px-4 py-2 hover:bg-cta rounded-lg">Péče&nbsp;po
-                                            manikúře<br />kosmetice<br />biomikrojehličkách</a>
+                                    <a class="nav-link-dropdown-active" href="/sluzby/">Služby <svg
+                                            class="size-4 transition-transform duration-300 group-hover:rotate-180"
+                                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke="currentColor" stroke-width="2">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="m19 9-7 7-7-7" />
+                                        </svg></a>
+                                    <div class="absolute
+                                        left-1/2
+                                        top-full
+                                        z-50
+                                        pt-4
+                                        w-max
+                                        -origin-top
+                                        -translate-x-1/2
+                                        translate-y-2
+                                        scale-95
+                                        opacity-0
+                                        transition-all
+                                        duration-200
+                                        group-hover:translate-y-0
+                                        group-hover:scale-100
+                                        group-hover:opacity-100
+                                        pointer-events-none
+                                        group-hover:pointer-events-auto">
+                                        <div
+                                            class="absolute left-1/2 top-4 h-4 w-4 -translate-x-1/2 -translate-y-1/2 rotate-45 border-l border-t border-border bg-primary-background">
+                                        </div>
+                                        <div
+                                            class="overflow-hidden rounded-2xl border border-border bg-primary-background shadow-lg">
+                                            <a href="/sluzby/#kosmetika" class="nav-dropdown-item">Kosmetika</a>
+                                            <a href="/sluzby/#barveni-ras-oboci" class="nav-dropdown-item">Barvení řas a
+                                                obočí</a>
+                                            <a href="/sluzby/#manikura" class="nav-dropdown-item">Manikúra</a>
+                                            <a href="/sluzby/#p-shine" class="nav-dropdown-item">P-shine</a>
+                                            <a href="/sluzby/#biomikrojehlickova-kura"
+                                                class="nav-dropdown-item">Biomikrojehličková kůra</a>
+                                            <a href="/sluzby/#epilace" class="nav-dropdown-item">Epilace</a>
+                                            <a href="/sluzby/#pece" class="nav-dropdown-item">Péče&nbsp;po
+                                                manikúře<br />kosmetice<br />biomikrojehličkách</a>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="relative flex group">
-                                    <a class="transition-colors duration-700 ease-in-out hover:bg-cta px-3 py-2 rounded-lg cursor-pointer"
-                                        href="/cenik/">
+                                    <a class="nav-link-dropdown" href="/cenik/">
                                         Ceník
+                                        <svg class="size-4 transition-transform duration-300 group-hover:rotate-180"
+                                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke="currentColor" stroke-width="2">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="m19 9-7 7-7-7" />
+                                        </svg>
                                     </a>
                                     <!-- Dropdown menu -->
-                                    <div
-                                        class="absolute left-0 top-full hidden group-hover:block bg-white shadow-lg rounded-lg ">
-                                        <a href="/cenik/#manikura"
-                                            class="block px-4 py-2 hover:bg-cta rounded-t-lg">Manikúra</a>
-                                        <a href="/cenik/#kosmetika" class="block px-4 py-2 hover:bg-cta">Kosmetika</a>
-                                        <a href="/cenik/#epilace"
-                                            class="block px-4 py-2 hover:bg-cta rounded-b-lg">Epilace</a>
+                                    <div class="absolute
+                                        left-1/2
+                                        top-full
+                                        z-50
+                                        pt-4
+                                        w-max
+                                        -origin-top
+                                        -translate-x-1/2
+                                        translate-y-2
+                                        scale-95
+                                        opacity-0
+                                        transition-all
+                                        duration-200
+                                        group-hover:translate-y-0
+                                        group-hover:scale-100
+                                        group-hover:opacity-100
+                                        pointer-events-none
+                                        group-hover:pointer-events-auto">
+                                        <div
+                                            class="absolute left-1/2 top-4 h-4 w-4 -translate-x-1/2 -translate-y-1/2 rotate-45 border-l border-t border-border bg-primary-background">
+                                        </div>
+                                        <div
+                                            class="overflow-hidden rounded-2xl border border-border bg-primary-background shadow-lg">
+                                            <a href="/cenik/#manikura" class="nav-dropdown-item ">Manikúra</a>
+                                            <a href="/cenik/#kosmetika" class="nav-dropdown-item">Kosmetika</a>
+                                            <a href="/cenik/#epilace" class="nav-dropdown-item">Epilace</a>
+                                        </div>
+
                                     </div>
                                 </div>
-                                <a class="transition-colors duration-700 ease-in-out hover:bg-cta px-3 py-2 rounded-lg"
-                                    href="/poukazy/">Poukazy</a>
-                                <a class="transition-colors duration-700 ease-in-out hover:bg-cta px-3 py-2 rounded-lg"
-                                    href="/kontakt/">Kontakt</a>
-                                <div class="flex space-x-2">
+                                <a class="nav-link" href="/poukazy/">Poukazy</a>
+                                <a class="nav-link" href="/kontakt/">Kontakt</a>
+                                <div class="flex items-center gap-3 border-l border-border pl-8">
                                     <a href="https://www.instagram.com/krasna.s.jitu/" target="_blank"
-                                        class="transition-colors duration-700 ease-in-out py-2 px-2 [&_svg]:h-6 [&_svg]:w-6 hover:bg-cta rounded-lg cursor-pointer">
-                                        <svg xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision"
-                                            text-rendering="geometricPrecision" image-rendering="optimizeQuality"
-                                            fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 512">
+                                        class="flex h-12 w-12 items-center justify-center rounded-full hover:bg-header/10 hover:text-header transition duration-300 ">
+                                        <svg class="h-6 w-6 fill-current" xmlns="http://www.w3.org/2000/svg"
+                                            shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
+                                            image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"
+                                            viewBox="0 0 512 512">
                                             <path fill-rule="nonzero"
                                                 d="M170.663 256.157c-.083-47.121 38.055-85.4 85.167-85.482 47.121-.092 85.407 38.029 85.499 85.159.091 47.13-38.047 85.4-85.176 85.492-47.112.09-85.399-38.039-85.49-85.169zm-46.108.092c.141 72.602 59.106 131.327 131.69 131.185 72.592-.14 131.35-59.089 131.209-131.691-.141-72.577-59.114-131.336-131.715-131.194-72.585.141-131.325 59.114-131.184 131.7zm237.104-137.092c.033 16.954 13.817 30.682 30.772 30.649 16.961-.034 30.689-13.811 30.664-30.765-.033-16.954-13.818-30.69-30.78-30.656-16.962.033-30.689 13.818-30.656 30.772zm-208.696 345.4c-24.958-1.086-38.511-5.234-47.543-8.709-11.961-4.628-20.496-10.177-29.479-19.093-8.966-8.951-14.532-17.461-19.202-29.397-3.508-9.033-7.73-22.569-8.9-47.527-1.269-26.983-1.559-35.078-1.683-103.433-.133-68.338.116-76.434 1.294-103.441 1.069-24.941 5.242-38.512 8.709-47.536 4.628-11.977 10.161-20.496 19.094-29.478 8.949-8.983 17.459-14.532 29.403-19.202 9.025-3.526 22.561-7.715 47.511-8.9 26.998-1.278 35.085-1.551 103.423-1.684 68.353-.133 76.448.108 103.456 1.294 24.94 1.086 38.51 5.217 47.527 8.709 11.968 4.628 20.503 10.145 29.478 19.094 8.974 8.95 14.54 17.443 19.21 29.413 3.524 8.999 7.714 22.552 8.892 47.494 1.285 26.998 1.576 35.094 1.7 103.432.132 68.355-.117 76.451-1.302 103.442-1.087 24.957-5.226 38.52-8.709 47.56-4.629 11.953-10.161 20.488-19.103 29.471-8.941 8.949-17.451 14.531-29.403 19.201-9.009 3.517-22.561 7.714-47.494 8.9-26.998 1.269-35.086 1.56-103.448 1.684-68.338.133-76.424-.124-103.431-1.294zM149.977 1.773c-27.239 1.286-45.843 5.648-62.101 12.019-16.829 6.561-31.095 15.353-45.286 29.603C28.381 57.653 19.655 71.944 13.144 88.79c-6.303 16.299-10.575 34.912-11.778 62.168C.172 178.264-.102 186.973.031 256.489c.133 69.508.439 78.234 1.741 105.548 1.302 27.231 5.649 45.827 12.019 62.092 6.569 16.83 15.353 31.089 29.611 45.289 14.25 14.2 28.55 22.918 45.404 29.438 16.282 6.294 34.902 10.583 62.15 11.777 27.305 1.203 36.022 1.468 105.521 1.336 69.532-.133 78.25-.44 105.555-1.734 27.239-1.302 45.826-5.664 62.1-12.019 16.829-6.585 31.095-15.353 45.288-29.611 14.191-14.251 22.917-28.55 29.428-45.404 6.304-16.282 10.592-34.904 11.777-62.134 1.195-27.323 1.478-36.049 1.344-105.557-.133-69.516-.447-78.225-1.741-105.522-1.294-27.256-5.657-45.844-12.019-62.118-6.577-16.829-15.352-31.08-29.602-45.288-14.25-14.192-28.55-22.935-45.404-29.429-16.29-6.304-34.903-10.6-62.15-11.778C333.747.164 325.03-.101 255.506.031c-69.507.133-78.224.431-105.529 1.742z" />
                                         </svg>
                                         <span class="sr-only">Instagram profil</span>
                                     </a>
                                     <a href="https://www.facebook.com/Krasna.s.Jitu/" target="_blank"
-                                        class="transition-colors duration-700 ease-in-out py-2 px-2 [&_svg]:h-6 [&_svg]:w-6 hover:bg-cta rounded-lg cursor-pointer">
-                                        <svg xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision"
-                                            text-rendering="geometricPrecision" image-rendering="optimizeQuality"
-                                            fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 509.64">
+                                        class="flex h-12 w-12 items-center justify-center rounded-full hover:bg-header/10 hover:text-header transition duration-300 ">
+                                        <svg class="h-6 w-6 fill-current" xmlns="http://www.w3.org/2000/svg"
+                                            shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
+                                            image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"
+                                            viewBox="0 0 512 509.64">
                                             <path
                                                 d="M115.613 0h280.774C459.974 0 512 52.026 512 115.612v278.415c0 63.588-52.026 115.613-115.613 115.613H287.015V332.805h69.253l14.365-78.229h-83.618v-27.667c0-41.341 16.218-57.241 58.194-57.241 13.04 0 23.533.317 29.576.953V99.706c-11.448-3.18-39.434-6.361-55.651-6.361-85.545 0-124.977 40.388-124.977 127.522v33.709h-52.79v78.229h52.79V509.64h-78.544C52.026 509.64 0 457.615 0 394.027V115.612C0 52.026 52.026 0 115.613 0z" />
                                         </svg>
                                         <span class="sr-only">Facebook profil</span>
                                     </a>
                                     <a href="https://wa.me/+420606317648" target="_blank"
-                                        class="transition-colors duration-700 ease-in-out py-2 px-2 [&_svg]:h-6 [&_svg]:w-6 hover:bg-cta rounded-lg cursor-pointer">
-                                        <svg xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision"
-                                            text-rendering="geometricPrecision" image-rendering="optimizeQuality"
-                                            fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 510 512.459">
+                                        class="flex h-12 w-12 items-center justify-center rounded-full hover:bg-header/10 hover:text-header transition duration-300 ">
+                                        <svg class="h-6 w-6 fill-current" xmlns="http://www.w3.org/2000/svg"
+                                            shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
+                                            image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"
+                                            viewBox="0 0 510 512.459">
                                             <path fill="#111B21"
                                                 d="M435.689 74.468C387.754 26.471 324 .025 256.071 0 116.098 0 2.18 113.906 2.131 253.916c-.024 44.758 11.677 88.445 33.898 126.946L0 512.459l134.617-35.311c37.087 20.238 78.85 30.891 121.345 30.903h.109c139.949 0 253.88-113.917 253.928-253.928.024-67.855-26.361-131.645-74.31-179.643v-.012zm-179.618 390.7h-.085c-37.868-.011-75.016-10.192-107.428-29.417l-7.707-4.577-79.886 20.953 21.32-77.889-5.017-7.987c-21.125-33.605-32.29-72.447-32.266-112.322.049-116.366 94.729-211.046 211.155-211.046 56.373.025 109.364 22.003 149.214 61.903 39.853 39.888 61.781 92.927 61.757 149.313-.05 116.377-94.728 211.058-211.057 211.058v.011zm115.768-158.067c-6.344-3.178-37.537-18.52-43.358-20.639-5.82-2.119-10.044-3.177-14.27 3.178-4.225 6.357-16.388 20.651-20.09 24.875-3.702 4.238-7.403 4.762-13.747 1.583-6.343-3.178-26.787-9.874-51.029-31.487-18.86-16.827-31.597-37.598-35.297-43.955-3.702-6.355-.39-9.789 2.775-12.943 2.849-2.848 6.344-7.414 9.522-11.116s4.225-6.355 6.343-10.581c2.12-4.238 1.06-7.937-.522-11.117-1.584-3.177-14.271-34.409-19.568-47.108-5.151-12.37-10.385-10.69-14.269-10.897-3.703-.183-7.927-.219-12.164-.219s-11.105 1.582-16.925 7.939c-5.82 6.354-22.209 21.709-22.209 52.927 0 31.22 22.733 61.405 25.911 65.642 3.177 4.237 44.745 68.318 108.389 95.812 15.135 6.538 26.957 10.446 36.175 13.368 15.196 4.834 29.027 4.153 39.96 2.52 12.19-1.825 37.54-15.353 42.824-30.172 5.283-14.818 5.283-27.529 3.701-30.172-1.582-2.641-5.819-4.237-12.163-7.414l.011-.024z" />
                                         </svg>
@@ -484,90 +538,139 @@
 
         </div>
     </main>
-    <footer class="mt-10 md:mt-16 lg:mt-20">
-        <div class="bg-secondary-background pt-2 sm:pt-6 pb-2 flex flex-col ">
-            <div
-                class="max-w-7xl w-full px-2 self-center sm:py-4 sm:px-10 lg:px-20 flex flex-col sm:flex-row justify-evenly">
-                <div
-                    class="flex flex-col flex-1 items-center gap-6 py-4 sm:py-0 border-b-white border-b-1 sm:border-none ">
-                    <h3 class="text-xl sm:text-2xl">Salon</h3>
+    <footer class="mt-20 bg-secondary-background text-text">
+        <div class="mx-auto max-w-6xl px-6 py-16">
+
+            <div class="grid gap-16 md:grid-cols-2">
+
+                <!-- Salon -->
+                <section>
+
+                    <h2 class="mb-10 uppercase tracking-[0.3em] text-lg font-medium text-text">
+                        Salon
+                    </h2>
+
                     <a href="https://www.google.com/maps?ll=48.989264,16.674582&z=19&t=m&hl=cs&gl=CZ&mapclient=embed&q=B.+Němcové+111+691+63+Velké+Němčice"
-                        target="_blank" class="flex items-center gap-2 py-2 px-2 [&_svg]:h-8 [&_svg]:w-8 underline">
+                        target="_blank" class="group flex items-center gap-4 [&_svg]:h-8 [&_svg]:w-8">
+                        <!-- LOCATION SVG -->
                         <?xml version="1.0" encoding="utf-8"?><svg version="1.1" id="Layer_1"
                             xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-                            y="0px" viewBox="0 0 92.25 122.88" style="enable-background:new 0 0 92.25 122.88"
+                            y="0px" viewBox="0 0 92.26 122.88" style="enable-background:new 0 0 92.26 122.88"
                             xml:space="preserve">
-                            <style type="text/css">
-                                .st0 {
-                                    fill-rule: evenodd;
-                                    clip-rule: evenodd;
-                                }
-                            </style>
                             <g>
-                                <path class="st0"
-                                    d="M68.51,106.28c-5.59,6.13-12.1,11.62-19.41,16.06c-0.9,0.66-2.12,0.74-3.12,0.1 c-10.8-6.87-19.87-15.12-27-24.09C9.14,86.01,2.95,72.33,0.83,59.15c-2.16-13.36-0.14-26.22,6.51-36.67 c2.62-4.13,5.97-7.89,10.05-11.14C26.77,3.87,37.48-0.08,48.16,0c10.28,0.08,20.43,3.91,29.2,11.92c3.08,2.8,5.67,6.01,7.79,9.49 c7.15,11.78,8.69,26.8,5.55,42.02c-3.1,15.04-10.8,30.32-22.19,42.82V106.28L68.51,106.28z M46.12,23.76 c12.68,0,22.95,10.28,22.95,22.95c0,12.68-10.28,22.95-22.95,22.95c-12.68,0-22.95-10.27-22.95-22.95 C23.16,34.03,33.44,23.76,46.12,23.76L46.12,23.76z" />
+                                <path
+                                    d="M47.49,116.85c6.31-4.01,11.98-8.87,16.92-14.29c10.73-11.75,17.97-26.11,20.87-40.2c2.88-13.91,1.52-27.54-4.85-38.06 c-1.81-3.02-4.08-5.78-6.78-8.26c-7.74-7.05-16.6-10.41-25.52-10.5c-9.37-0.07-18.87,3.45-27.27,10.14 c-3.58,2.86-6.53,6.15-8.82,9.78c-5.9,9.28-7.69,20.8-5.74,32.85c1.97,12.23,7.78,25.02,17.04,36.61 c6.44,8.08,14.54,15.58,24.18,21.91L47.49,116.85L47.49,116.85z M46.13,21.16c7.05,0,13.45,2.86,18.06,7.49 c4.63,4.63,7.49,11,7.49,18.06c0,7.05-2.86,13.45-7.49,18.06c-4.63,4.63-11,7.49-18.06,7.49c-7.05,0-13.45-2.86-18.06-7.49 c-4.63-4.63-7.49-11-7.49-18.06c0-7.05,2.86-13.45,7.49-18.06C32.7,24.02,39.07,21.16,46.13,21.16L46.13,21.16z M60.51,32.33 c-3.67-3.67-8.78-5.97-14.38-5.97c-5.63,0-10.71,2.27-14.38,5.97c-3.67,3.67-5.97,8.78-5.97,14.38c0,5.63,2.27,10.71,5.97,14.38 c3.67,3.67,8.78,5.97,14.38,5.97c5.63,0,10.71-2.27,14.38-5.97c3.67-3.67,5.97-8.78,5.97-14.38C66.47,41.08,64.21,36,60.51,32.33 L60.51,32.33z M68.52,106.27c-5.6,6.12-12.09,11.61-19.42,16.06c-0.88,0.66-2.13,0.75-3.13,0.11 c-10.8-6.87-19.85-15.13-26.99-24.09C9.15,86.02,2.94,72.34,0.83,59.16c-2.15-13.36-0.14-26.2,6.51-36.68 c2.63-4.13,5.97-7.89,10.07-11.14C26.78,3.88,37.51-0.07,48.17,0c10.28,0.09,20.42,3.9,29.22,11.93c3.09,2.81,5.67,5.99,7.78,9.48 c7.15,11.77,8.69,26.81,5.56,42.01c-3.11,15.04-10.8,30.33-22.18,42.8L68.52,106.27L68.52,106.27z" />
                             </g>
                         </svg>
-                        <span>Boženy Němcové 111, <br /> 691 63 Velké Němčíce </span>
+
+                        <div class="leading-7">
+                            Boženy Němcové 111<br>
+                            691&nbsp;63 Velké Němčice
+                        </div>
+
                     </a>
-                    <div class="flex flex-row space-x-2 md:space-x-4 lg:space-x-6">
-                        <a href="https://www.instagram.com/krasna.s.jitu/" target="_blank"
-                            class="flex gap-2 transition-colors duration-700 ease-in-out py-2 px-2 [&_svg]:h-8 [&_svg]:w-8 hover:bg-white/20 rounded-lg cursor-pointer">
-                            <svg xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision"
-                                text-rendering="geometricPrecision" image-rendering="optimizeQuality"
-                                fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 512">
+
+                    <div class="mt-10 flex gap-5">
+
+                        <!-- Instagram -->
+                        <a href="https://www.instagram.com/krasna.s.jitu/" target="_blank" aria-label="Instagram"
+                            class="flex h-12 w-12 items-center justify-center rounded-full bg-white/40 transition duration-300 hover:-translate-y-1 hover:bg-white">
+
+                            <!-- SVG -->
+                            <svg class="h-6 w-6 fill-current" xmlns="http://www.w3.org/2000/svg"
+                                shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
+                                image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"
+                                viewBox="0 0 512 512">
                                 <path fill-rule="nonzero"
                                     d="M170.663 256.157c-.083-47.121 38.055-85.4 85.167-85.482 47.121-.092 85.407 38.029 85.499 85.159.091 47.13-38.047 85.4-85.176 85.492-47.112.09-85.399-38.039-85.49-85.169zm-46.108.092c.141 72.602 59.106 131.327 131.69 131.185 72.592-.14 131.35-59.089 131.209-131.691-.141-72.577-59.114-131.336-131.715-131.194-72.585.141-131.325 59.114-131.184 131.7zm237.104-137.092c.033 16.954 13.817 30.682 30.772 30.649 16.961-.034 30.689-13.811 30.664-30.765-.033-16.954-13.818-30.69-30.78-30.656-16.962.033-30.689 13.818-30.656 30.772zm-208.696 345.4c-24.958-1.086-38.511-5.234-47.543-8.709-11.961-4.628-20.496-10.177-29.479-19.093-8.966-8.951-14.532-17.461-19.202-29.397-3.508-9.033-7.73-22.569-8.9-47.527-1.269-26.983-1.559-35.078-1.683-103.433-.133-68.338.116-76.434 1.294-103.441 1.069-24.941 5.242-38.512 8.709-47.536 4.628-11.977 10.161-20.496 19.094-29.478 8.949-8.983 17.459-14.532 29.403-19.202 9.025-3.526 22.561-7.715 47.511-8.9 26.998-1.278 35.085-1.551 103.423-1.684 68.353-.133 76.448.108 103.456 1.294 24.94 1.086 38.51 5.217 47.527 8.709 11.968 4.628 20.503 10.145 29.478 19.094 8.974 8.95 14.54 17.443 19.21 29.413 3.524 8.999 7.714 22.552 8.892 47.494 1.285 26.998 1.576 35.094 1.7 103.432.132 68.355-.117 76.451-1.302 103.442-1.087 24.957-5.226 38.52-8.709 47.56-4.629 11.953-10.161 20.488-19.103 29.471-8.941 8.949-17.451 14.531-29.403 19.201-9.009 3.517-22.561 7.714-47.494 8.9-26.998 1.269-35.086 1.56-103.448 1.684-68.338.133-76.424-.124-103.431-1.294zM149.977 1.773c-27.239 1.286-45.843 5.648-62.101 12.019-16.829 6.561-31.095 15.353-45.286 29.603C28.381 57.653 19.655 71.944 13.144 88.79c-6.303 16.299-10.575 34.912-11.778 62.168C.172 178.264-.102 186.973.031 256.489c.133 69.508.439 78.234 1.741 105.548 1.302 27.231 5.649 45.827 12.019 62.092 6.569 16.83 15.353 31.089 29.611 45.289 14.25 14.2 28.55 22.918 45.404 29.438 16.282 6.294 34.902 10.583 62.15 11.777 27.305 1.203 36.022 1.468 105.521 1.336 69.532-.133 78.25-.44 105.555-1.734 27.239-1.302 45.826-5.664 62.1-12.019 16.829-6.585 31.095-15.353 45.288-29.611 14.191-14.251 22.917-28.55 29.428-45.404 6.304-16.282 10.592-34.904 11.777-62.134 1.195-27.323 1.478-36.049 1.344-105.557-.133-69.516-.447-78.225-1.741-105.522-1.294-27.256-5.657-45.844-12.019-62.118-6.577-16.829-15.352-31.08-29.602-45.288-14.25-14.192-28.55-22.935-45.404-29.429-16.29-6.304-34.903-10.6-62.15-11.778C333.747.164 325.03-.101 255.506.031c-69.507.133-78.224.431-105.529 1.742z" />
                             </svg>
                             <span class="sr-only">Instagram profil</span>
                         </a>
-                        <a href="https://www.facebook.com/Krasna.s.Jitu/" target="_blank"
-                            class="flex gap-2 transition-colors duration-700 ease-in-out py-2 px-2 [&_svg]:h-8 [&_svg]:w-8 hover:bg-white/20 rounded-lg cursor-pointer">
-                            <svg xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision"
-                                text-rendering="geometricPrecision" image-rendering="optimizeQuality"
-                                fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 509.64">
+
+                        <!-- Facebook -->
+                        <a href="https://www.facebook.com/Krasna.s.Jitu/" target="_blank" aria-label="Facebook"
+                            class="flex h-12 w-12 items-center justify-center rounded-full bg-white/40 transition duration-300 hover:-translate-y-1 hover:bg-white">
+
+                            <!-- SVG -->
+                            <svg class="h-6 w-6 fill-current" xmlns="http://www.w3.org/2000/svg"
+                                shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
+                                image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"
+                                viewBox="0 0 512 509.64">
                                 <path
                                     d="M115.613 0h280.774C459.974 0 512 52.026 512 115.612v278.415c0 63.588-52.026 115.613-115.613 115.613H287.015V332.805h69.253l14.365-78.229h-83.618v-27.667c0-41.341 16.218-57.241 58.194-57.241 13.04 0 23.533.317 29.576.953V99.706c-11.448-3.18-39.434-6.361-55.651-6.361-85.545 0-124.977 40.388-124.977 127.522v33.709h-52.79v78.229h52.79V509.64h-78.544C52.026 509.64 0 457.615 0 394.027V115.612C0 52.026 52.026 0 115.613 0z" />
                             </svg>
                             <span class="sr-only">Facebook profil</span>
                         </a>
-                        <a href="https://wa.me/+420606317648" target="_blank"
-                            class="flex gap-2 transition-colors duration-700 ease-in-out py-2 px-2 [&_svg]:h-8 [&_svg]:w-8 hover:bg-white/20 rounded-lg cursor-pointer">
-                            <svg xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision"
-                                text-rendering="geometricPrecision" image-rendering="optimizeQuality"
-                                fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 510 512.459">
-                                <path fill="#111B21"
+
+                        <!-- Whatsapp -->
+                        <a href="https://wa.me/+420606317648" target="_blank" aria-label="Whatsapp"
+                            class="flex h-12 w-12 items-center justify-center rounded-full bg-white/40 transition duration-300 hover:-translate-y-1 hover:bg-white">
+
+                            <!-- SVG -->
+                            <svg class="h-6 w-6 fill-current" xmlns="http://www.w3.org/2000/svg"
+                                shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
+                                image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"
+                                viewBox="0 0 510 512.459">
+                                <path
                                     d="M435.689 74.468C387.754 26.471 324 .025 256.071 0 116.098 0 2.18 113.906 2.131 253.916c-.024 44.758 11.677 88.445 33.898 126.946L0 512.459l134.617-35.311c37.087 20.238 78.85 30.891 121.345 30.903h.109c139.949 0 253.88-113.917 253.928-253.928.024-67.855-26.361-131.645-74.31-179.643v-.012zm-179.618 390.7h-.085c-37.868-.011-75.016-10.192-107.428-29.417l-7.707-4.577-79.886 20.953 21.32-77.889-5.017-7.987c-21.125-33.605-32.29-72.447-32.266-112.322.049-116.366 94.729-211.046 211.155-211.046 56.373.025 109.364 22.003 149.214 61.903 39.853 39.888 61.781 92.927 61.757 149.313-.05 116.377-94.728 211.058-211.057 211.058v.011zm115.768-158.067c-6.344-3.178-37.537-18.52-43.358-20.639-5.82-2.119-10.044-3.177-14.27 3.178-4.225 6.357-16.388 20.651-20.09 24.875-3.702 4.238-7.403 4.762-13.747 1.583-6.343-3.178-26.787-9.874-51.029-31.487-18.86-16.827-31.597-37.598-35.297-43.955-3.702-6.355-.39-9.789 2.775-12.943 2.849-2.848 6.344-7.414 9.522-11.116s4.225-6.355 6.343-10.581c2.12-4.238 1.06-7.937-.522-11.117-1.584-3.177-14.271-34.409-19.568-47.108-5.151-12.37-10.385-10.69-14.269-10.897-3.703-.183-7.927-.219-12.164-.219s-11.105 1.582-16.925 7.939c-5.82 6.354-22.209 21.709-22.209 52.927 0 31.22 22.733 61.405 25.911 65.642 3.177 4.237 44.745 68.318 108.389 95.812 15.135 6.538 26.957 10.446 36.175 13.368 15.196 4.834 29.027 4.153 39.96 2.52 12.19-1.825 37.54-15.353 42.824-30.172 5.283-14.818 5.283-27.529 3.701-30.172-1.582-2.641-5.819-4.237-12.163-7.414l.011-.024z" />
                             </svg>
                             <span class="sr-only">Whatsapp</span>
                         </a>
+
                     </div>
-                </div>
-                <div class="bg-white w-[1px] sm:block hidden"></div>
-                <div class="flex flex-col flex-1 items-center gap-6 py-4 sm:py-0">
-                    <h3 class="text-xl sm:text-2xl">Odkazy</h3>
-                    <div class="flex flex-col text-lg">
-                        <a href="/sluzby/"
-                            class="text-center transition-colors duration-700 ease-in-out py-2 px-2 hover:bg-white/20 rounded-lg cursor-pointer underline">
-                            Služby
-                        </a>
-                        <a href="/cenik/"
-                            class="text-center transition-colors duration-700 ease-in-out py-2 px-2 hover:bg-white/20 rounded-lg cursor-pointer underline">
-                            Ceník
-                        </a>
-                        <a href="/poukazy/"
-                            class="text-center transition-colors duration-700 ease-in-out py-2 px-2 hover:bg-white/20 rounded-lg cursor-pointer underline">
-                            Poukazy
-                        </a>
-                        <a href="/kontakt/"
-                            class="text-center transition-colors duration-700 ease-in-out py-2 px-2 hover:bg-white/20 rounded-lg cursor-pointer underline">
-                            Kontakt
-                        </a>
-                    </div>
+
+                </section>
+
+                <!-- Navigation -->
+                <nav>
+
+                    <h2 class="mb-10 uppercase tracking-[0.3em] text-lg font-medium text-text">
+                        Odkazy
+                    </h2>
+
+                    <ul class="space-y-5 text-lg">
+
+                        <li>
+                            <a href="/sluzby/" class="transition hover:translate-x-2 hover:text-hover inline-block">
+                                › Služby
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="/cenik/" class="transition hover:translate-x-2 hover:text-hover inline-block">
+                                › Ceník
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="/poukazy/" class="transition hover:translate-x-2 hover:text-hover inline-block">
+                                › Poukazy
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="/kontakt/" class="transition hover:translate-x-2 hover:text-hover inline-block">
+                                › Kontakt
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </nav>
+
+            </div>
+
+            <div class="mt-16 border-t border-white/40 pt-8">
+
+                <div class="flex flex-col items-center justify-between gap-6 text-sm md:flex-row">
+
+                    <p>
+                        © 2026 Krásná s Jitu
+                    </p>
+
                 </div>
             </div>
-            <p class="text-center sm:text-left self-end px-4 mt-4">&copy; 2026 Krásná s Jitu. Všechna práva vyhrazena.
-            </p>
+
         </div>
     </footer>
 </body>

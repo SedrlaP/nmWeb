@@ -26,12 +26,16 @@
     @apply flex gap-2 items-center rounded-2xl px-4 py-2 transition-all ease-in-out duration-700 hover:bg-header/10 hover:text-header
   }
 
+  .nav-link-dropdown-active {
+    @apply flex gap-2 items-center rounded-2xl px-4 py-2 transition-all ease-in-out duration-700 bg-header/10 text-header
+  }
+
 
   .nav-dropdown-item {
     @apply block px-5 py-2 transition-colors hover:bg-header/8
   }
 
-  .nav-active {
+  .nav-link-active {
     @apply transition-all duration-700 ease-in-out rounded-2xl bg-header/12 text-header px-4 py-2
   }
 }
