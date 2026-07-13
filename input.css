@@ -10,7 +10,8 @@
   --color-cta: #D5E0D3;
   --color-hover: #EAB2BC;
   --color-border: #D4D0C6;
-  --breakpoint-md-menu: 853px;
+  --breakpoint-md-menu: 870px;
+  --breakpoint-lg-menu: 1150px;
 }
 
 @layer components {
