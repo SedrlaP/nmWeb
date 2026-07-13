@@ -11,7 +11,7 @@
   --color-hover: #EAB2BC;
   --color-border: #D4D0C6;
   --breakpoint-md-menu: 870px;
-  --breakpoint-lg-menu: 1150px;
+  --breakpoint-large-menu: 72rem;
 }
 
 @layer components {
