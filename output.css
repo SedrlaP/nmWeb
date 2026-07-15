@@ -925,6 +925,9 @@
   .text-primary-background {
     color: var(--color-primary-background);
   }
+  .text-secondary-background {
+    color: var(--color-secondary-background);
+  }
   .text-text {
     color: var(--color-text);
   }
