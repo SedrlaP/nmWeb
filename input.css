@@ -7,9 +7,10 @@
   --color-header: #6F7768;
   --color-primary-background: #F4F6F2;
   --color-secondary-background: #D5E0D3;
-  --color-cta: #D5E0D3;
+  --color-cta: #7a8067;
   --color-hover: #EAB2BC;
   --color-border: #D4D0C6;
+  --color-header-background: #f7f3ed;
   --breakpoint-md-menu: 870px;
   --breakpoint-large-menu: 72rem;
 }
