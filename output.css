@@ -322,6 +322,9 @@
   .my-10 {
     margin-block: calc(var(--spacing) * 10);
   }
+  .mt-1 {
+    margin-top: calc(var(--spacing) * 1);
+  }
   .mt-2 {
     margin-top: calc(var(--spacing) * 2);
   }
@@ -489,12 +492,6 @@
   .max-w-\[810px\] {
     max-width: 810px;
   }
-  .min-w-2 {
-    min-width: calc(var(--spacing) * 2);
-  }
-  .min-w-2\/5 {
-    min-width: calc(2/5 * 100%);
-  }
   .flex-1 {
     flex: 1;
   }
@@ -559,6 +556,9 @@
   .list-inside {
     list-style-position: inside;
   }
+  .list-decimal {
+    list-style-type: decimal;
+  }
   .list-disc {
     list-style-type: disc;
   }
@@ -609,6 +609,13 @@
   }
   .gap-16 {
     gap: calc(var(--spacing) * 16);
+  }
+  .space-y-1 {
+    :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(calc(var(--spacing) * 1) * var(--tw-space-y-reverse));
+      margin-block-end: calc(calc(var(--spacing) * 1) * calc(1 - var(--tw-space-y-reverse)));
+    }
   }
   .space-y-2 {
     :where(& > :not(:last-child)) {
@@ -728,9 +735,6 @@
   .bg-cta {
     background-color: var(--color-cta);
   }
-  .bg-header-background {
-    background-color: var(--color-header-background);
-  }
   .bg-primary-background {
     background-color: var(--color-primary-background);
   }
@@ -848,6 +852,9 @@
   .pl-5 {
     padding-left: calc(var(--spacing) * 5);
   }
+  .pl-6 {
+    padding-left: calc(var(--spacing) * 6);
+  }
   .text-center {
     text-align: center;
   }
@@ -919,14 +926,8 @@
   .text-header {
     color: var(--color-header);
   }
-  .text-header-background {
-    color: var(--color-header-background);
-  }
   .text-primary-background {
     color: var(--color-primary-background);
-  }
-  .text-secondary-background {
-    color: var(--color-secondary-background);
   }
   .text-text {
     color: var(--color-text);
@@ -1308,11 +1309,6 @@
   .sm\:flex-row {
     @media (width >= 40rem) {
       flex-direction: row;
-    }
-  }
-  .sm\:items-start {
-    @media (width >= 40rem) {
-      align-items: flex-start;
     }
   }
   .sm\:space-y-8 {
