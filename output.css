@@ -652,6 +652,9 @@
       margin-inline-end: calc(calc(var(--spacing) * 2) * calc(1 - var(--tw-space-x-reverse)));
     }
   }
+  .place-self-center {
+    place-self: center;
+  }
   .self-center {
     align-self: center;
   }
@@ -1569,6 +1572,11 @@
   .lg\:pr-32 {
     @media (width >= 64rem) {
       padding-right: calc(var(--spacing) * 32);
+    }
+  }
+  .lg\:pr-64 {
+    @media (width >= 64rem) {
+      padding-right: calc(var(--spacing) * 64);
     }
   }
   .lg\:pl-20 {
