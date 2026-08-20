@@ -1,8 +1,16 @@
 // carousel.js
 const images = [
-
-
+  'media/nehty40.webp',
+  'media/nehty42.webp',
   'media/nehty33.webp',
+  'media/nehty38.webp',
+
+  'media/nehty37.webp',
+  'media/nehty36.webp',
+  'media/nehty39.webp',
+  'media/nehty41.webp',
+
+  'media/nehty43.webp',
   'media/nehty32.webp',
   'media/nehty28.webp',
   'media/nehty29.webp',
