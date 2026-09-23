@@ -803,6 +803,9 @@
       background-color: color-mix(in oklab, var(--color-white) 90%, transparent);
     }
   }
+  .bg-\[url\(\'media\/salon-novy\.jpeg\'\)\] {
+    background-image: url('media/salon-novy.jpeg');
+  }
   .bg-\[url\(\'media\/salon-panorama\.webp\'\)\] {
     background-image: url('media/salon-panorama.webp');
   }
