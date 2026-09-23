@@ -298,6 +298,9 @@
   .left-1\/4 {
     left: calc(1/4 * 100%);
   }
+  .left-50 {
+    left: calc(var(--spacing) * 50);
+  }
   .z-0 {
     z-index: 0;
   }
@@ -530,6 +533,15 @@
   }
   .max-w-\[810px\] {
     max-width: 810px;
+  }
+  .max-w-\[1920px\] {
+    max-width: 1920px;
+  }
+  .max-w-\[1980px\] {
+    max-width: 1980px;
+  }
+  .max-w-\[2560px\] {
+    max-width: 2560px;
   }
   .max-w-xl {
     max-width: var(--container-xl);
