@@ -519,11 +519,20 @@
   .max-w-4xl {
     max-width: var(--container-4xl);
   }
+  .max-w-5 {
+    max-width: calc(var(--spacing) * 5);
+  }
   .max-w-6xl {
     max-width: var(--container-6xl);
   }
   .max-w-7xl {
     max-width: var(--container-7xl);
+  }
+  .max-w-48 {
+    max-width: calc(var(--spacing) * 48);
+  }
+  .max-w-52 {
+    max-width: calc(var(--spacing) * 52);
   }
   .max-w-56 {
     max-width: calc(var(--spacing) * 56);
@@ -900,6 +909,9 @@
   }
   .py-6 {
     padding-block: calc(var(--spacing) * 6);
+  }
+  .py-8 {
+    padding-block: calc(var(--spacing) * 8);
   }
   .py-14 {
     padding-block: calc(var(--spacing) * 14);
@@ -1489,6 +1501,11 @@
       max-width: calc(var(--spacing) * 64);
     }
   }
+  .sm\:max-w-84 {
+    @media (width >= 40rem) {
+      max-width: calc(var(--spacing) * 84);
+    }
+  }
   .sm\:grid-cols-\[40\%_60\%\] {
     @media (width >= 40rem) {
       grid-template-columns: 40% 60%;
@@ -1558,6 +1575,11 @@
       padding-block: calc(var(--spacing) * 8);
     }
   }
+  .sm\:py-14 {
+    @media (width >= 40rem) {
+      padding-block: calc(var(--spacing) * 14);
+    }
+  }
   .sm\:pt-0 {
     @media (width >= 40rem) {
       padding-top: calc(var(--spacing) * 0);
@@ -1606,6 +1628,16 @@
   .md\:top-20 {
     @media (width >= 48rem) {
       top: calc(var(--spacing) * 20);
+    }
+  }
+  .md\:right-0 {
+    @media (width >= 48rem) {
+      right: calc(var(--spacing) * 0);
+    }
+  }
+  .md\:left-0 {
+    @media (width >= 48rem) {
+      left: calc(var(--spacing) * 0);
     }
   }
   .md\:mt-0 {
@@ -1707,6 +1739,11 @@
   .lg\:left-\[35\%\] {
     @media (width >= 64rem) {
       left: 35%;
+    }
+  }
+  .lg\:ml-32 {
+    @media (width >= 64rem) {
+      margin-left: calc(var(--spacing) * 32);
     }
   }
   .lg\:block {
@@ -1844,6 +1881,16 @@
     @media (width >= 64rem) {
       font-size: var(--text-xl);
       line-height: var(--tw-leading, var(--text-xl--line-height));
+    }
+  }
+  .large-menu\:ml-20 {
+    @media (width >= 72rem) {
+      margin-left: calc(var(--spacing) * 20);
+    }
+  }
+  .large-menu\:ml-32 {
+    @media (width >= 72rem) {
+      margin-left: calc(var(--spacing) * 32);
     }
   }
   .large-menu\:space-x-4 {
